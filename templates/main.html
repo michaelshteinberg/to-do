@@ -1,0 +1,31 @@
+<div class="main">
+	
+	<h2 class="sub-title">Task add</h2>
+	<div class="task-form">
+		<div class="task-form-field">
+			<label for="task-title" class="task-form-field-label">Title:</label>
+			<input type="text" id="task-title" name="task-title" ng-model="task.title.value" class="task-form-field-input-text">
+			<div ng-show="task.title.error.empty" class="task-form-field-error">Title can't be empty</div>
+		</div>
+		<div class="task-form-field">
+			<label for="task-description" class="task-form-field-label">Description:</label>
+			<textarea id="task-description" name="task-description" ng-model="task.description.value" class="task-form-field-input-textarea"></textarea>
+			<div ng-show="task.description.error.empty" class="task-form-field-error">Description can't be empty</div>
+		</div>
+		<button ng-click="addTask()" class="task-form-button">Add new task</button>
+		<div ng-show="addTaskComplete" class="task-form-complete">Task add complete</div>
+	</div>
+	
+	<h2 class="sub-title">Task list</h2>
+	<table cellspacing="0" cellpadding="0" border="0" class="task-list">
+		<tr>
+			<!--<th class="task-list-title">#</th>-->
+			<th class="task-list-title">Title</th>
+		<tr>
+		<tr ng-repeat="task in tasks | orderBy:'title'">
+			<!--<td class="task-list-content">{{ $index + 1 }}</td>-->
+			<td class="task-list-content"><a href="#/task/{{task.id}}">{{task.title}}</a></td>
+		<tr>
+	</table>
+	
+</div>

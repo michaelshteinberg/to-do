@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDo">
+<head>
+	<meta charset="utf-8">
+	<title>TO DO</title>
+	<script src="libs/angularjs/1.4.6/angular.min.js"></script>
+	<script src="libs/angularjs/1.4.6/angular-route.min.js"></script>
+	<script src="libs/parse/1.6.2/parse.min.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="title">TO DO</h1>
+			<div class="content">
+				<div ng-controller="ToDoController">
+					<div ng-view>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

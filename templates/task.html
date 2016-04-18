@@ -1,0 +1,23 @@
+<div class="task">
+
+	<h2 class="sub-title">Task edit</h2>
+	<div class="task-form">
+		<div class="task-form-field">
+			<label for="task-title" class="task-form-field-label">Title:</label>
+			<input type="text" id="task-title" name="task-title" ng-model="task.title.value" class="task-form-field-input-text">
+			<div ng-show="task.title.error.empty" class="task-form-field-error">Title can't be empty</div>
+		</div>
+		<div class="task-form-field">
+			<label for="task-description" class="task-form-field-label">Description:</label>
+			<textarea id="task-description" name="task-description" ng-model="task.description.value" class="task-form-field-input-textarea"></textarea>
+			<div ng-show="task.description.error.empty" class="task-form-field-error">Description can't be empty</div>
+		</div>
+		<button ng-click="editTask()" class="task-form-button">Update task</button>
+		<div ng-show="editTaskComplete" class="task-form-complete">Task edit complete</div>
+	</div>
+	
+	<h2 class="task-title">{{ task.title.value }}</h2>
+	<div class="task-description">{{ task.description.value }}</div>
+	
+	<a href="#/main" class="back-button">Go back to task list</a>
+</div>

@@ -1,0 +1,174 @@
+html
+{
+	padding:0;
+}
+body
+{
+	padding:0;
+	margin:0;
+	background:#f0f0f0;
+	font-size:14px;
+	font-family:arial;
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	max-width:800px;
+	padding:50px 10px 50px 10px;
+}
+
+.container
+{
+	padding:10px;
+	background:#fff;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+}
+
+.title
+{
+	display:inline-block;
+	margin:0 0 10px 0;
+	font-size:30px;
+	color:#444;
+	text-align:left;
+}
+.sub-title
+{
+	display:inline-block;
+	margin:0 0 10px 0;
+	font-size:20px;
+	color:#444;
+	text-align:left;
+}
+
+.content
+{
+	font-size:14px;
+	color:#444;
+}
+
+.main
+{
+
+}
+
+
+
+.task-form
+{
+	margin:0 0 20px 0;
+}
+.task-form-complete
+{
+	color:#006DAF;
+	font-weight:bold;
+	text-align:left;
+	margin:10px 0 10px 0;
+}
+.task-form-field
+{
+	margin:0 0 4px 0;
+}
+.task-form-field-label
+{
+	margin:0 4px 0  0;
+	width:100px;
+	display:inline-block;
+	vertical-align:top;
+}
+.task-form-field-error
+{
+	margin:0  0 4px 0;
+	display:inline-block;
+	vertical-align:top;
+	color:#ff0000;
+}
+.task-form-field-input-text
+{
+	padding:4px;
+	border:1px solid #c0c0c0;
+	text-align:left;
+	font-size:14px;
+	font-family:arial;
+	max-width:400px;
+	width:90%;
+}
+.task-form-field-input-textarea
+{
+	padding:4px;
+	border:1px solid #c0c0c0;
+	text-align:left;
+	font-size:14px;
+	font-family:arial;
+	max-width:400px;
+	width:90%;
+	height:80px;
+}
+.task-form-button
+{
+	margin:0 auto 0 auto;
+	display:inline-block;
+}
+.task-list
+{
+	border:1px solid #c0c0c0;
+	border-collapse:collapse;
+	width:100%;
+}
+.task-list-title
+{
+	border:1px solid #c0c0c0;
+	padding:4px;
+	font-size:16px;
+	color:#444;
+	text-align:left;
+	font-weight:bold;
+	background:#E4E4E4;
+}
+.task-list-content
+{
+	border:1px solid #c0c0c0;
+	padding:4px;
+	font-size:14px;
+	color:#444;
+	text-align:left;
+	font-weight:normal;
+}
+.task-list-content > a
+{
+	padding:4px;
+	font-size:14px;
+	color:#444;
+	text-align:left;
+	font-weight:normal;
+}
+
+
+.task
+{
+
+}
+.task-title
+{
+	display:inline-block;
+	margin:0 0 10px 0;
+	font-size:20px;
+	color:#444;
+	text-align:left;
+}
+.task-description
+{
+	font-size:14px;
+	font-family:arial;
+	color:#444;
+	margin: 0 0 20px;
+}
+
+.back-button
+{
+	color:#179800;
+	font-weight:bold;
+}
